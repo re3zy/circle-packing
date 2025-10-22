@@ -1,0 +1,26 @@
+/**
+ * Global styles with Tailwind CSS
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html, body {
+    @apply h-full;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .tooltip {
+    @apply absolute pointer-events-none bg-white border border-gray-300 rounded shadow-lg p-2 opacity-0 transition-opacity z-10;
+  }
+}
+
